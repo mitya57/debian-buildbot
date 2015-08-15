@@ -5,3 +5,4 @@ disable-sqlalchemy-version-check.diff
 restart-single-instance.patch
 exit-code.patch
 upgrade-master.patch
+sphinx13-show-urls.patch

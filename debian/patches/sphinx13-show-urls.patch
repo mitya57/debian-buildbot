@@ -1,0 +1,20 @@
+Description: change latex_show_urls config option to inline
+Origin: upstream, https://github.com/buildbot/buildbot/commit/4bc42d2178607b1d
+Last-Update: 2015-08-15
+
+--- a/docs/conf.py
++++ b/docs/conf.py
+@@ -214,8 +214,11 @@
+ # If true, show page references after internal links.
+ #latex_show_pagerefs = False
+ 
+-# If true, show URL addresses after external links.
+-latex_show_urls = True
++# Three possible values for this option (see sphinx config manual) are:
++# 1. 'no' – do not display URLs (default)
++# 2. 'footnote' – display URLs in footnotes
++# 3. 'inline' – display URLs inline in parentheses
++latex_show_urls = 'inline'
+ 
+ # Additional stuff for the LaTeX preamble.
+ #latex_preamble = ''
